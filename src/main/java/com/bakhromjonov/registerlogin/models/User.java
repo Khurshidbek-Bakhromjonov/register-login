@@ -1,6 +1,6 @@
 package com.bakhromjonov.registerlogin.models;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,6 +17,7 @@ import java.util.Collections;
 @NoArgsConstructor
 @Builder
 @Entity
+@Table(name = "users")
 public class User implements UserDetails {
 
     @Id
